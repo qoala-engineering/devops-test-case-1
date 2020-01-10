@@ -1,0 +1,15 @@
+{
+  "workbench.colorCustomizations": {
+    "list.inactiveSelectionForeground": "#ff0000",
+    "sideBarSectionHeader.background": "#555555",
+    "activityBar.background": "#05342E",
+    "titleBar.activeBackground": "#084841",
+    "titleBar.activeForeground": "#ECFDFB"
+  },
+  "editor.formatOnSave": true,
+  "python.linting.flake8Enabled": false,
+  "python.linting.enabled": true,
+  "python.formatting.provider": "black",
+  "python.linting.mypyEnabled": true,
+  "python.envFile": "${workspaceRoot}/.pyenv"
+}

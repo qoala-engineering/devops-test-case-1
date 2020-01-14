@@ -1,3 +1,5 @@
+# Qoala Devops Test Case 1
+
 # Before you begin (Python >= 3.8)
 
 ## pipenv
@@ -42,3 +44,11 @@ The default settings are:
   "python.linting.mypyEnabled": true
 }
 ```
+
+# Instructions:
+
+## 2. Create deployable app with docker-compose
+
+- Create Dockerfile to run the project that will run the file `create_s3_bucket.py`
+- Run a localstack
+- Create `docker-compose.yml` file that will setup the localstack as well as running the the dockerized project

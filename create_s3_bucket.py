@@ -17,7 +17,7 @@ try:
     response = s3_client.list_buckets()
     buckets = [bucket["Name"] for bucket in response["Buckets"]]
     print(f"list buckets created: {buckets}")
-    if "test1" not in buckets or "test2" not in buckets:
+    if ["test1", "test2"] in buckets:
         raise Exception("Test bucket not created")
 
     s3_client.delete_bucket(Bucket="test1")

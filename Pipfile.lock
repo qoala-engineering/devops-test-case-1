@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "7ef4db00d18de85ef7852839924973ac54f24fd9c997738a58690bc0815aad9e"
+            "sha256": "01c98cddf9d167ed90a3ef3ca0deca0e9da22a66ce88e486f46e9f140cf3cf7a"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -23,13 +23,6 @@
             ],
             "index": "pypi",
             "version": "==1.11.1"
-        },
-        "boto3-stubs": {
-            "hashes": [
-                "sha256:f36243c358c655a064e890db5ad5da71e61827bf268265ea8d53ac1e1347e81c"
-            ],
-            "index": "pypi",
-            "version": "==1.11.1.0"
         },
         "botocore": {
             "hashes": [
@@ -60,13 +53,6 @@
                 "sha256:bde2aef6f44302dfb30320115b17d030798de8c4110e28d5cf6cf91a7a31074c"
             ],
             "version": "==0.9.4"
-        },
-        "mypy-boto3": {
-            "hashes": [
-                "sha256:9fee7f9e2e561c35deeb120197550569fa283de430ec507da7fef70e5235b7d7"
-            ],
-            "index": "pypi",
-            "version": "==1.11.1.0"
         },
         "python-dateutil": {
             "hashes": [
@@ -153,6 +139,11 @@
             "version": "==1.11.1"
         },
         "boto3-stubs": {
+            "extras": [
+                "ecs",
+                "elbv2",
+                "essential"
+            ],
             "hashes": [
                 "sha256:f36243c358c655a064e890db5ad5da71e61827bf268265ea8d53ac1e1347e81c"
             ],

@@ -47,8 +47,24 @@ The default settings are:
 
 # Instructions:
 
-## 2. Create deployable app with docker-compose
+## Create deployable app with docker & docker-compose
+
+The project consists of boto3, mypy, black formatter bootstrapping and a main file `create_s3_bucket.py`
 
 - Create Dockerfile to run the project that will run the file `create_s3_bucket.py`
 - Run a localstack
-- Create `docker-compose.yml` file that will setup the localstack as well as running the the dockerized project
+- Create `docker-compose.yml` file that will setup the [localstack](https://github.com/localstack/localstack) as well as running the the dockerized project
+- The expectation of this finished project is that running the `docker-compose up` will run the `create_s3_bucket.py` python file with the following logs:
+  - Success run log:
+    ```
+    list buckets created: ['test1', 'test2']
+    list buckets after delete: []
+    ```
+  - Failed run log:
+    ```
+    Error: Could not connect to the endpoint URL: "http://localhost:4572/test1"
+    ```
+    or any other errors not matching the success run log
+
+Please fork this repository and share us the link to your repository when you're done.
+You can extend any of the scripts to introduce some features such as creating an API out of this.

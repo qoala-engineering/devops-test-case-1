@@ -8,13 +8,17 @@ flake8 = "*"
 black = "*"
 pre-commit = "*"
 mypy = "*"
+boto3-stubs = {extras = ["essential", "ecs", "elbv2", "s3"],version = "*"}
 
 [packages]
 click = "*"
 pyyaml = "*"
+boto3 = "*"
+mypy_boto3 = "*"
+boto3-stubs = "*"
 
 [requires]
-python_version = "3.7"
+python_version = "3.8"
 
 [pipenv]
 allow_prereleases = true

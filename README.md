@@ -1,4 +1,4 @@
-# Before you begin (Python >= 3.7)
+# Before you begin (Python >= 3.8)
 
 ## pipenv
 
@@ -9,8 +9,8 @@ To bootstrap the project after pipenv is installed, do `pipenv install`. To acti
 
 ### Activate python shell with pipenv
 
-This project uses `pipenv` to manage the python environment. And should be initialized with `Python>=3.7` by doing:
-`pipenv --python 3.7`
+This project uses `pipenv` to manage the python environment. And should be initialized with `Python>=3.8` by doing:
+`pipenv --python 3.8`
 
 ## pre-commit hook
 
